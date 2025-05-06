@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Passion+One:wght@400;700;900&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', 'cursive';
+    --font3: 'Handlee', 'cursive';
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,25 +16,28 @@
 html, body{
     background-color: darkgray;
     min-height: 100vh;
-    
 }
 header{
     background-color: black;
     text-align: center;
     color: white;
+    padding: 20px;
 }
 header > h1{
     padding: 10px;
+    font-family: var(--font2);
     font-variant: small-caps;
     font-size: 10vw;
 }
 header > p{
     padding-bottom: 50px;
+    font-family: var(--font1);
 }
 
 header a{
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 a:hover {
     text-decoration: underline;
@@ -37,6 +48,10 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 4vw;
+    font-weight: bold;
+    
 }
 
 .normal{
@@ -50,8 +65,9 @@ section{
 }
 
 .Imagem > p{
-    width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.377);
+    padding: 5px;
 }
 
 footer{
@@ -59,4 +75,5 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: var(--font1);
 }
